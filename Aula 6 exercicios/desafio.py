@@ -21,4 +21,4 @@ def mesextenso (dados):
             dia >= 1 and dia <= 28
             return f'{dd} de {extenso} de {aaaa}.'
 data = input('Digite a data desejada: ')
-print(mesextenso(dados))
+print(mesextenso)
