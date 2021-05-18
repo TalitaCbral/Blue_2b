@@ -1,4 +1,4 @@
 # Blue_2b
 # Repositório de exercicios 
-# Aulas separadas por pastas 
+# Aulas separadas 
 # Exercicios feitos individualmente 
