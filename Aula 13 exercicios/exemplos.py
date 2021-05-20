@@ -1,5 +1,5 @@
 #tupla dentro da lista, como um dos elementos
-'''lista = [1, 2, 3, "String", "String2"]
+lista = [1, 2, 3, "String", "String2"]
 tupla = ("Nome","123-456")
 lista3 = [("Nome","123-456"), 2, 3, "String", "String2"]
 
@@ -94,13 +94,13 @@ vingadores = {"Chris Evans": "Capitão América", "Mark Ruffalo": "Hulk", "Tom H
 del vingadores['Chris Evans']
 print(vingadores.pop('Mark Ruffalo', 'Ator não localizado'))
 treino = vingadores.popitem()
-print(vingadores)'''
+print(vingadores)
 
 # Unindo Dicionários
 vingadores = {"Chris Evans": "Capitão América", "Mark Ruffalo": "Hulk", "Tom Hiddleston": "Loki",
 "Chris Hemworth": "Thor", "Robert Downey Jr": "Homem de Ferro", "Scarlett Johansson": "Viúva Negra"}
 
-'''Novo
+#Novo
 
 animais = {'cachorro': 'Vira lata Caramelo', 'Cavalo': 'Manga Larga', 'Gato': 'Siamês'}
 for itens in animais:
@@ -111,14 +111,14 @@ for itens in animais:
 #input(), é como um enter, ele para meu programa e continua só aprtando enter
 print(vingadores)
 
-#treino de união, exercitando o uso de 'for com dicionario' '''
+#treino de união, exercitando o uso de 'for com dicionario' 
 viloes = {"CGI":"Thanos","Cavera":"Vermelha","Miranha":"Negro do Espaço"}
-'''for hero in viloes:
+for hero in viloes:
     print(hero)
     vingadores[hero] = viloes[hero]
-print(vingadores)'''
+print(vingadores)
 
 #outro método de união - simplificado
-'''método update(), forma simples de união'''
+#método update(), forma simples de união
 vingadores.update(viloes)
 print(vingadores)
