@@ -36,10 +36,10 @@ if mult > 40:
     mult_div = mult // divisao
     print(f'O número {mult} dividido por {divisao} é: {mult_div}')
 else:
-    print(f'A multiplicação dos numeros {num1} e {num2} é menor que 40!')
+    print('A multiplicação é menor que 40!')
 
 #impar ou par 
 if soma % 2 == 0:
     print(f'A soma dos números é: {soma}, o resultado é par!')
 else:
-    print(f'A soma dos números é: {soma}, o resultado é impar!')
+    print(f'A soma dos números retorna um resultado impar: {soma}')

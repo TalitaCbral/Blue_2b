@@ -26,19 +26,16 @@ print('Iremos sortear um número inteiro de 0 a 20')
 import math
 import random
 
-adivinha = int(input('Tente adivinhar qual o número escolhido: '))
 numero = random.randint(1, 20)
-turnos_necessarios = math.ceil(numero / adivinha)
-opc2 = 0
-while adivinha != numero and opc < 6:
-    adivinha = int(input('Tente adivinhar novamente qual o número escolhido: '))
-    if adivinha != numero:
-        print('Ops, você errou!')
-        continue
-    opc += 1
-    if opc == 6:
-        print(f'Tentativas esgotadas, o número era: {numero}')
-        exit()
-if adivinha == numero:
-    print(f'O número era: {numero}')
-print(f'Você precisou {turnos_necessarios} turnos para adivinhar o número!')
+numero_usuario = tentou = 0
+
+while numero != numero_usuario:
+    tentou += 1
+    numero_usuario = int(input('Tente adivinhar qual o número escolhido: '))
+    if numero_usuario > numero:
+        print('Está quente, tente um número menor!')
+    elif numero_usuario < numero:
+        print('Está quente, tente um número maior!')
+    else:
+        print(f'Parabéns você acertou, O número era: {numero}')
+print(f'Você precisou {tentou} tentativas para adivinhar o número!')

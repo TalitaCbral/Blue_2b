@@ -7,7 +7,7 @@ vogais = []
 cont = 0
 
 for item in frase:
-    if item in 'aeiou':
+    if item in 'aeiouAEIOUÁÉÍÓÚáéíóúâêîôûâÂÊÎÔÛÃÕãõ':
         # num_vogais += 1
         vogais.append(item)
         cont += 1
@@ -19,7 +19,7 @@ consoantes = []
 cont = 0
 
 for item in frase:
-    if item not in 'aeiou':
+    if item not in 'aeiouAEIOUÁÉÍÓÚáéíóúâêîôûâÂÊÎÔÛÃÕãõ':
         consoantes.append(item)
         cont += 1
 print(f'Frase sem vogais:{"".join(consoantes)}')
