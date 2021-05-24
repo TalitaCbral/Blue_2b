@@ -14,6 +14,7 @@ for itens in celebs:
 nome = input('Informe de qual celebridade gostaria de ver a data de nascimento: ').title()
 print(celebs.get(nome, f'O nome {nome} não foi encontrado em nosso banco de dados!'))
 
-print(2021 - int(celebs[nome]), 'Anos de Idade!')
+idade = 2021 - int(celebs[nome])
+print(f'A idade de {nome} é de {idade} anos!')
 
 #sintax get: dicionario.get(chave) #retorna um valor específico
