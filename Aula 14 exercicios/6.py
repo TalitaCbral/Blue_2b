@@ -1,9 +1,36 @@
-import math 
-import random
+#06 - Utilizando listas faça um programa que faça 5 perguntas para uma pessoa sobre um crime. As perguntas são:
 
-vida_do_monstro = random.randint(10, 50)
-ataque_do_jogador = int(input('Informe o valor de ataque do jogador por turno (entre 5 e 10): '))
+   # "Telefonou para a vítima?"
 
-turnos_necessarios = math.ceil(vida_do_monstro / ataque_do_jogador)
-print(f'vida do monstro: {vida_do_monstro}')
-print(f'O jogador precisara de {turnos_necessarios} turnos para derrotar o monstro!')
+   # "Esteve no local do crime?"
+
+   # "Mora perto da vítima?"
+
+   # "Devia para a vítima?"
+
+   # "Já trabalhou com a vítima?" 
+
+# O programa deve no final emitir uma classificação sobre a participação da pessoa no crime. 
+
+   # Se a pessoa responder positivamente a 2 questões ela deve ser classificada como "Suspeita",
+
+   # Entre 3 e 4 como "Cúmplice" e 5 como "Assassino". 
+
+   # Caso contrário, ele será classificado como "Inocente".
+
+P = ["Telefonou para a vítima?",  "Esteve no local do crime?",
+     "Mora perto da vítima?", "Devia para a vítima?", "Já trabalhou com a vítima?"]
+sim = 0
+for i in P:
+    print(i)
+    c = input(((("Sim ou Não?").lower()).replace("ã", "a")).strip())
+    if c == "sim":
+        sim = sim + 1
+if sim == 2:
+    print("Suspeita")
+elif 3 <= sim <= 4:
+    print("Cumplice")
+elif sim == 5:
+    print("Assassino!! cxx]====> ")
+else:
+    print("inocente")
