@@ -2,6 +2,9 @@
 # string com uma frase informada pelo usuário e conte quantas vezes aparece as vogais a,e,i,o,u e 
 # mostre na tela, depois mostre na tela essa mesma frase sem nenhuma vogal.
 
+#05 - Refatore o exercício 2, para que uma função receba a frase, faça todo o tratamento necessário e retorne o resultado. 
+# Depois mostre na tela o resultado e a quantidade de letras foram retiradas da frase original.
+
 frase = input("Digite uma frase: ")
 vogais = []
 cont = 0
@@ -13,6 +16,7 @@ for item in frase:
         cont += 1
 print(f'Vogais encontradas:{"".join(vogais)}')
 print(f'Quantidade:{cont} vogais encontradas na frase!')
+print(f'Quantidade de {cont} vogais retiradas da frase!')
 
 #segunda parte 
 consoantes = []
